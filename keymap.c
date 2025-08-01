@@ -83,11 +83,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [1] = LAYOUT(
   //|-----------------------------------------------------|                    |-----------------------------------------------------|
-        KC_NO,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_NO, KC_NO, KC_NO,   KC_NO, XXXXXXX, XXXXXXX,    
+        KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,                         KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_NO,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_NO,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_NO, KC_PSLS, KC_PMNS, KC_PAST, KC_PPLS, KC_NO,                          XXXXXXX, XXXXXXX, XXXXXXX, KC_PCMM, MT(MOD_LSFT, KC_DOT), KC_NO,
+      KC_NO, KC_PSLS, KC_PMNS, KC_PAST, KC_PPLS, KC_NO,                         KC_NO,   KC_NO,    KC_NO,  KC_PCMM, MT(MOD_LSFT, KC_DOT), KC_NO,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
              LT(1, KC_LGUI), MT(MOD_LCTL, KC_NO), LT(1, KC_SPC),     KC_BSPC,  MT(MOD_LSFT, KC_NO), LT(2, KC_NO)
                                       //|--------------------------|  |--------------------------|
@@ -97,9 +97,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|-----------------------------------------------------|                    |-----------------------------------------------------|
       KC_NO, S(KC_1), S(KC_COMM), S(KC_4), S(KC_DOT), S(KC_2),                   KC_NO, KC_LBRC, S(KC_MINS), KC_RBRC, S(KC_BSLS), KC_NO,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_MINS, KC_BSLS, S(KC_9), XXXXXXX, S(KC_0), S(KC_3),                     S(KC_5), S(KC_LBRC),  KC_PEQL, S(KC_RBRC), KC_SCLN, S(KC_SCLN),
+      KC_MINS, KC_BSLS, S(KC_9),  KC_NO,   S(KC_0),   S(KC_3),                  S(KC_5), S(KC_LBRC),  KC_PEQL, S(KC_RBRC), KC_SCLN, S(KC_SCLN),
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_NO, KC_PSLS, KC_PMNS, KC_PAST, KC_PPLS, KC_GRV,                         S(KC_GRV), S(KC_7), S(KC_6), KC_PCMM, MT(MOD_LSFT, KC_DOT), S(KC_SLSH),
+      KC_NO,  KC_PSLS,  KC_PMNS, KC_PAST, KC_PPLS, KC_GRV,                      S(KC_GRV), S(KC_7), S(KC_6), KC_PCMM, MT(MOD_LSFT, KC_DOT), S(KC_SLSH),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
              LT(1, KC_LGUI), MT(MOD_LCTL, KC_NO), LT(1, KC_SPC),     KC_BSPC,  MT(MOD_LSFT, KC_NO), LT(2, KC_NO)
                                       //|--------------------------|  |--------------------------|
@@ -107,11 +107,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [3] = LAYOUT(
   //|-----------------------------------------------------|                    |-----------------------------------------------------|
-      KC_F1,   KC_F2,     KC_F3,   KC_F4,  KC_F5,  KC_F6,                       KC_F7,    KC_F8,   KC_F9,  KC_F10 ,  KC_F11 , KC_F12,
+      KC_F1,   KC_F2,    KC_F3,   KC_F4,  KC_F5,  KC_F6,                        KC_F7,    KC_F8,   KC_F9,  KC_F10 ,  KC_F11 , KC_F12,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_CAPS, XXXXXXX, XXXXXXX, KC_UP, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_PGUP,  KC_UP  , KC_PGDN, XXXXXXX, _______,
+      KC_CAPS, KC_NO,   KC_NO,    KC_UP,  KC_NO,  KC_NO,                        KC_NO,  KC_PGUP,  KC_UP,  KC_PGDN,  KC_NO,   KC_NO,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX,                      KC_PSCR, KC_LEFT, KC_DOWN, KC_RGHT, KC_NO, KC_NO,
+      KC_NO,  KC_NO,   KC_LEFT, KC_DOWN,  KC_RGHT, KC_NO,                       KC_PSCR, KC_LEFT, KC_DOWN, KC_RGHT, KC_NO, KC_NO,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
 
                LT(1, KC_LGUI), MT(MOD_LCTL, KC_NO), LT(1, KC_SPC),     KC_BSPC,  MT(MOD_LSFT, KC_NO), LT(2, KC_NO)
