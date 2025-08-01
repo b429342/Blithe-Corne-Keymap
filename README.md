@@ -72,5 +72,48 @@ Although this layer is a combination of a bunch of different options it takes ma
 
 ![[400px-Keyboard_effort_grid.png]]
 The BEAKL layout uses an effort grid that shows the ease of pressing a certain kid, and it bases the placement of keys off of this grid. 
+Although this 
 
 The BEAKL 15 layout has a 3x3 backbone home block like a numpad, this makes it good for opening and closing symbols like ()[]{}<>. 
+  
+I did move around some of the BEAKL 15 symbols just to place them in places I found more favorable like moving the colons around and moving the arithmetic symbols.
+I clustered the math symbols close together on the bottom row so I can repeat them in the number layer. 
+Besides moving around symbols I also added some since the BEAKL 15 layout didn't include symbols like exclamation and question mark. I filled these in with the remaining slots mostly by trying to keep familiarty
+with the standard layout with ! in the top left and ? in the bottom right. 
+*These could be changed and moved around whether I find the effort grid more important or the familiarity from qwerty more important. Anyway using this should also feel free to make improvements based on what you like and prefer.*
+
+
+## Function Layer
+At this point most keys have been plotted in a layer on the board. However there are some keys that may be useful and important to have. These will be housed in the function layer that is activated by holding 
+the key on the bottom right of the board. 
+
+Firstly I felt the need to have the function keys (F1-12) on this layer. Just like the number layer I took inspiration from this layout (https://configure.zsa.io/ergodox-ez/layouts/mnNX/latest/1)
+and decided to have them in a straight line on the top row. Having them on the top row makes it more familiar to the standard layout and also ensures I have to go out of my way to hit them.
+(Don't want to accidentally hit Alt F4)
+
+Second I decided to have the arrow keys since they are useful if you want to be efficient and not take your hands off the keyboard for something like text editing. Since this keyboard will 
+be used for programming and typing a decent amount I find this neccessary. I also decided to duplicate this setup on both halves so each hand has their own set of arrow keys. Since there are plenty of spare keys I don't think having duplicates is a big problem, and I can get rid of the set I find less useful later. 
+*Where the keys are right now is actually not the best according to the BEAKL effort grid since 3 will have a value above 1. I can make it better by shifting it up, however the F keys are there so I might change the F keys to the bottom row so that the arrow keys will be in a spot that is better to press. Moving it up a row will make 3/4 keys have a value of .5 instead of 1+.*
+
+I then have page up and page down keys near the arrow keys just in case I need it. Page up and down are similar to the arrow keys since they make navigating easier especially for webpages without using the mouse. 
+Although not used a lot I still put in the print screen key since I do use it once in a while, the same goes for the Caps Lock key. I don't use them all the time so it's not in a higher layer but they are used so they should be in some layer. 
+
+
+## OLED Screen
+The corne v3 PCB allows for an OLED screen to be soldered on. Although this screen is small it can still be used to display some graphics. I'm sure there are good ideas out there that people use like displaying WPM or battery life if using a wireless board however I simply only wanted to display what layer I am on. 
+
+I didn't have any ideas for fancy graphics so I chose a simple 3 letter + examples approach:
+- Number layer has 'NUM 1234'
+- Symbol layer has 'SYM !@#$'
+- Function layer simple has 'FN'
+
+To make these I made a file in inkscape with the size of the OLED I had which was 128x32 pixels. I when filled in the image with what I wanted mainly just inserting text and typing. After exporting the image I uploaded it to this website ([https://joric.github.io/qle/](https://javl.github.io/image2cpp/)) That turns it into the plain bytes for the image which you can copy and paste for your QMK file. 
+**Make sure you match the orientation of your OLED. For you the preview photo might look how you want but might not work on the OLED, when I had problems with this I just rotated 180 degress (preview looked upside down) and it worked perfectly on the OLED.** 
+
+I also decided to add a graphic that shows up if caps lock is in, I simply chose a small arrow design. *I did make each layer image with space so that the caps lock image could be overlayed on top (ex. if I have the symbol layer active but also caps lock) however they don't overlay by default so if I do want this I will have to tweak it so they do overlay* 
+
+Lastly I changed the image that shows up when I am on the home layer, by default it shows 'corne' however I felt that I could add a little more. For my personal one I have 'corne' in simple text but I also added the name of my keymap 'Blithe' right under it, not only that but there was a little more space so I added a little logo that is the name of a friend group I am in. 
+
+These are just what I wanted to have, however in the future if I get a good idea or want to take the time to learn how to make a nice animation I might add that. 
+
+Only other change I made was that I change the timeout for the OLED to a couple seconds. I don't alwyas need to display what layer I am on, just the second or so that I change to it. This will also decrease the likelihood or buring the screen. 
