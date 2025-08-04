@@ -2,7 +2,7 @@
 My custom QMK keymap for the Corne keyboard by Foostan. Canary Matrix layout with a BEAKL-15 inspired symbol layer. Also has some custom OLED design for each layer. 
 
 Skip To: 
-(What Keyboard Layout It Uses (Canary) [#canary-layout]
+[What Keyboard Layout It Uses (Canary)](#canary-layout)
 () [#] 
 
 ## Canary Layout
