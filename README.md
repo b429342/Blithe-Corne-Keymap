@@ -3,7 +3,9 @@ My custom QMK keymap for the Corne keyboard by Foostan. Canary Matrix layout wit
 
 Skip To: 
 [What Keyboard Layout It Uses (Canary)](#canary-layout)
-() [#] 
+[Modifier and thumb cluster picking](#placement-of-modifier-and-layer-keys)
+[](#)
+[](#)
 
 ## Canary Layout
 This keyboard ditches the default qwerty layout for the Canary layout. 
