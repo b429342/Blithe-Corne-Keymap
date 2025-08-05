@@ -1,12 +1,18 @@
 # Blithe-Corne-Keymap
 My custom QMK keymap for the Corne keyboard by Foostan. Canary Matrix layout with a BEAKL-15 inspired symbol layer. Also has some custom OLED design for each layer. 
 
+#How To Use
+
+<details>
+<summary>#About The Keymap</summary>
 Skip To: 
 [What Keyboard Layout It Uses (Canary)](#canary-layout)
-[Modifier and thumb cluster picking](#placement-of-modifier-and-layer-keys)
-[](#)
-[](#)
-
+[Modifier and Thumb Cluster Picking](#placement-of-modifier-and-layer-keys)
+[Number Layer](#number-layer)
+[Symbol Layer](#symbol-layer)
+[Function Layer](#function-layer)
+[OLED Screeen and Display] (#oled-screen)
+  
 ## Canary Layout
 This keyboard ditches the default qwerty layout for the Canary layout. 
 
@@ -65,6 +71,7 @@ The last bits of the number layer are the operation signs which are in the same 
 Lastly period and comma are in the same spot as they are in the base layer. 
 
 <img width="659" height="240" alt="image" src="https://github.com/user-attachments/assets/2524c8fc-72bc-488c-92a5-02e78aaaf60c" />
+
 ## Symbol Layer 
 Normal keyboard will have most symbols layered with the number layer. However a Corne board only has 3 rows, so it has no number row. Since our number row is similar to how numbers are
 on a default layer we could just have some symbols under those (either shift activated or on their own layer) however this would force us to fit the other symbols around them and will cause symbols 
@@ -73,6 +80,7 @@ to not be in efficient spots to hit.
 Although this layer is a combination of a bunch of different options it takes main inspiration from the BEAKL 15 symbol layout. (*NEEDS LINK*)
 
 <img width="670" height="246" alt="image" src="https://github.com/user-attachments/assets/ff2b8138-9375-46c0-986b-38414a2fffb8" />
+
 The BEAKL layout uses an effort grid that shows the ease of pressing a certain kid, and it bases the placement of keys off of this grid. 
 Although this 
 
@@ -94,13 +102,13 @@ and decided to have them in a straight line on the top row. Having them on the t
 (Don't want to accidentally hit Alt F4)
 
 Second I decided to have the arrow keys since they are useful if you want to be efficient and not take your hands off the keyboard for something like text editing. Since this keyboard will 
-be used for programming and typing a decent amount I find this neccessary. I also decided to duplicate this setup on both halves so each hand has their own set of arrow keys. Since there are plenty of spare keys I don't think having duplicates is a big problem, and I can get rid of the set I find less useful later. 
+be used for programming and typing a decent amount I find this neccessary. I also decided to duplicate this setup on both halves so each hand has their own set of arrow keys.
 *Where the keys are right now is actually not the best according to the BEAKL effort grid since 3 will have a value above 1. I can make it better by shifting it up, however the F keys are there so I might change the F keys to the bottom row so that the arrow keys will be in a spot that is better to press. Moving it up a row will make 3/4 keys have a value of .5 instead of 1+.*
 
-I then have page up and page down keys near the arrow keys just in case I need it. Page up and down are similar to the arrow keys since they make navigating easier especially for webpages without using the mouse. 
-Although not used a lot I still put in the print screen key since I do use it once in a while, the same goes for the Caps Lock key. I don't use them all the time so it's not in a higher layer but they are used so they should be in some layer. 
+I then have page up and page down keys near the arrow keys just in case I need it. Page up and down are similar to the arrow keys since they make navigating easier. Although not used a lot I still put in the print screen key since I do use it once in a while, the same goes for the Caps Lock key.
 
 <img width="671" height="284" alt="image" src="https://github.com/user-attachments/assets/f854a603-7de5-4f49-8733-301928bea49f" />
+
 ## OLED Screen
 The corne v3 PCB allows for an OLED screen to be soldered on. Although this screen is small it can still be used to display some graphics. I'm sure there are good ideas out there that people use like displaying WPM or battery life if using a wireless board however I simply only wanted to display what layer I am on. 
 
@@ -114,8 +122,9 @@ To make these I made a file in inkscape with the size of the OLED I had which wa
 
 I also decided to add a graphic that shows up if caps lock is in, I simply chose a small arrow design. *I did make each layer image with space so that the caps lock image could be overlayed on top (ex. if I have the symbol layer active but also caps lock) however they don't overlay by default so if I do want this I will have to tweak it so they do overlay* 
 
-Lastly I changed the image that shows up when I am on the home layer, by default it shows 'corne' however I felt that I could add a little more. For my personal one I have 'corne' in simple text but I also added the name of my keymap 'Blithe' right under it, not only that but there was a little more space so I added a little logo that is the name of a friend group I am in. 
+Lastly I changed the image that shows up when I am on the home layer, by default it shows 'corne' however I felt that I could add a little more. For my personal one I have 'corne' in simple text but I also added the name of my keymap 'Blithe' right under it, not only that but there was a little more space so I added a little logo.
 
 These are just what I wanted to have, however in the future if I get a good idea or want to take the time to learn how to make a nice animation I might add that. 
 
-Only other change I made was that I change the timeout for the OLED to a couple seconds. I don't alwyas need to display what layer I am on, just the second or so that I change to it. This will also decrease the likelihood or buring the screen. 
+Only other change I made was that I change the timeout for the OLED to a couple seconds. I don't always need to display what layer I am on, just the second or so that I change to it. This will also decrease the likelihood or burning the screen. 
+</details>
