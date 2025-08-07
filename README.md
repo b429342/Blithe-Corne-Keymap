@@ -34,12 +34,13 @@ To do this you first need to download QMK MSYS, this can be down here: https://m
 <details>
 <summary>Information about the keymap choices.</summary>
 Skip To: 
+  
 [What Keyboard Layout It Uses (Canary)](#canary-layout)
 [Modifier and Thumb Cluster Picking](#placement-of-modifier-and-layer-keys)
 [Number Layer](#number-layer)
 [Symbol Layer](#symbol-layer)
 [Function Layer](#function-layer)
-[OLED Screeen and Display] (#oled-screen)
+[OLED Screeen and Display](#oled-screen)
   
 ## Canary Layout
 This keyboard ditches the default qwerty layout for the Canary layout. 
