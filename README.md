@@ -30,9 +30,9 @@ To do this you first need to download QMK MSYS, this can be down here: https://m
 
 
 
-### QMK 
+# About The Keymap 
 <details>
-<summary># About The Keymap</summary>
+<summary>Information about the keymap choices.</summary>
 Skip To: 
 [What Keyboard Layout It Uses (Canary)](#canary-layout)
 [Modifier and Thumb Cluster Picking](#placement-of-modifier-and-layer-keys)
