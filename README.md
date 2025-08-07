@@ -1,10 +1,38 @@
 # Blithe-Corne-Keymap
 My custom QMK keymap for the Corne keyboard by Foostan. Canary Matrix layout with a BEAKL-15 inspired symbol layer. Also has some custom OLED design for each layer. 
+Skip To:
+[Info About The Keymap](#about-the-keymap)
+[How to Use](#how-to-use)
+# How To Use
+This will run through how to get the blithe keymap on a crkbd, it will go through the dependencies you need, how to compile the board and how to flash it to your board.
 
-#How To Use
+## Flashing Your Board
+The microcontrollers on your boards need to be flashed with the keymap so they can detect what the key presses mean. To do this you will need the qmk toolbox tool which can be downloaded here (https://github.com/qmk/qmk_toolbox). 
+After downloading and opening the toolbox you need to select the file that gets flashed to the board, for this we press open then need to select the blithe.hex file. You can compile the file yourself in this section if you want [](#) (*NEEDS LINK*). Alongside selecting the file you need to select your MCU, that can be down with the drop down window to the right of 'open'. 
+<img width="924" height="163" alt="image" src="https://github.com/user-attachments/assets/8de0f34e-d5cd-400d-8151-770485a8b902" />
+<img width="927" height="135" alt="image" src="https://github.com/user-attachments/assets/c93c1e8c-ef4b-493b-b6cf-d89fa9a4be02" />
 
+After selecting the file and MCU its time to flash. 
+First you need to plug in the master side of your board, for this hex file the master is the right side, if you want the left as master you will need to change the CONFIG.H file adn then [re-compile the hex file](#) (*NEEDS LINK*)
+After plugging in you need to get the board into bootloader mode, if you're board is programmed you can do this by holding space + B, if not then you will need to hit the reset button which can be down by shorting the connection with a pair of tweezers, unless you have soldered on a reset switch (I did not). 
+Once the board enters bootloader mode the toolbox window will say so and allow you to press the flash button, alternatively you can check the auto-flash button and as soon as it enters bootloader mode it will flash.  (*NEEDS PICTURES*)
+When it's done flashing it will say so and then you can plug the usb cable into the slave side of the board (this will be the left as default unless the CONFIG.H file is changed) and flash that board as well. 
+
+Once both sides are done flashing you can unplug the slave side, connect both halves with the TRSS cable and plug the usb into the master side.
+
+If however you don't like the default blithe keymap, make changes to the CONFIG file or change OLED icons you will need to compile your own .hex file which I will cover how to [here](#)    (*NEEDS LINK*).
+## Compiling The Hex File
+If you make changes to any of the files in the blithe folder then you will need to recompile the files into a new .hex file so that version can be flashed to the board. 
+
+To do this you first need to download QMK MSYS, this can be down here: https://msys.qmk.fm/
+
+
+
+
+
+### QMK 
 <details>
-<summary>#About The Keymap</summary>
+<summary># About The Keymap</summary>
 Skip To: 
 [What Keyboard Layout It Uses (Canary)](#canary-layout)
 [Modifier and Thumb Cluster Picking](#placement-of-modifier-and-layer-keys)
