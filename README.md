@@ -14,6 +14,7 @@ The microcontrollers on your boards need to be flashed with the keymap so they c
 
 After downloading and opening the toolbox you need to select the file that gets flashed to the board, for this we press open then need to select the blithe.hex file. You can compile the file yourself in this [section](#compiling-the-hex-file) if you want, or if you make changes to the default files.
 <img width="924" height="163" alt="image" src="https://github.com/user-attachments/assets/8de0f34e-d5cd-400d-8151-770485a8b902" />
+
 Alongside selecting the file you need to select your MCU, that can be down with the drop down window to the right of 'open'. Mine is already set to ATmega32U4 so I don't have to change it. 
 <img width="927" height="135" alt="image" src="https://github.com/user-attachments/assets/c93c1e8c-ef4b-493b-b6cf-d89fa9a4be02" />
 
